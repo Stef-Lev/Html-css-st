@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+:root {
+    font-size: 20px;
+}
+
+h1 {
+    color: rgb(230, 43, 43);
+    text-align: center;
+    text-shadow: 2px 2px #4d4d4d;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px #4d4d4d;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    color: black;
+    margin: 1.5%;
+}
+
+section {
+    background-color: rgb(230, 43, 43);
+}
+
+#grid-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 1500px;
+}
+
+.grid-item {
+    background-color: rgb(255, 255, 255);
+    color: rgb(230, 43, 43);
+    text-align: center;
+    flex-basis: 22%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 10px;
+    width: 250px;
+    font-size: 0.8rem;
+}
+
+.grid-item img {
+    width: 50%;
+}
+
+
+/* ul li:first-of-type {
+    flex-basis: 40%;
+} */
+
+@media(max-width: 1200px) {
+    .grid-item {
+        flex-basis: 30%;
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .grid-item {
+        flex-basis: 48%;
+        font-size: 0.6rem
+    }
+}
+
+@media(max-width: 480px) {
+    .grid-item {
+        flex-basis: 100%;
+        font-size: 0.5rem
+    }
+}
