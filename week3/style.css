@@ -2,3 +2,54 @@
 body {
     font-family: 'Alegreya Sans', sans-serif;
 }
+.toplogo {
+    margin-left: 41.82%;
+    margin-right: 41.82%;
+}
+
+.bg-light {
+    background-color: #01689b!important;
+    min-height: 70px;
+}
+.navbar-light .navbar-brand {
+    color: white;
+    font-size: 1.625rem;
+}
+.navbar-light .navbar-brand:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.25rem;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: #01689b;
+}
+.hero-image {
+    width: 100%;
+    position: relative;
+}
+
+/* Header Flex boxes */
+.flex-head-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    background-image: url(images/markthal-rotterdam-hero.jpg);
+    min-height: 330px;
+    background-position: center center;
+    background-size: cover;
+}
+.box-txt {
+    background-color: white;
+    width: 33.33%;
+
+}
