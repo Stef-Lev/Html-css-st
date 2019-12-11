@@ -1,20 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap');
 body {
     font-family: 'Alegreya Sans', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    list-style: none;
 }
-.toplogo {
-    margin-left: 41.82%;
-    margin-right: 41.82%;
+
+h3 {
+    font-weight: bold;
+    color: #00527a;
+    font-size: 1.4rem;
+}
+
+hr {
+    margin-top: 55px;
+}
+
+header {
+    background-color: #fff;
+    position: relative;
+    display: block;
+}
+
+.container #logotype {
+    margin-left: 45%;
+    margin-right: 55%;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .bg-light {
     background-color: #01689b!important;
-    min-height: 70px;
+    min-height: 80px;
 }
+
 .navbar-light .navbar-brand {
     color: white;
     font-size: 1.625rem;
 }
+
 .navbar-light .navbar-brand:hover {
     color: white;
     text-decoration: underline;
@@ -24,32 +52,61 @@ body {
     color: white;
     font-size: 1.25rem;
 }
+
 .navbar-light .navbar-nav .nav-link:hover {
     color: white;
     text-decoration: underline;
 }
+
 .navbar-light .navbar-toggler {
     color: white;
-    border-color: #01689b;
-}
-.hero-image {
-    width: 100%;
-    position: relative;
+    border-color: #01689b!important;
 }
 
-/* Header Flex boxes */
-.flex-head-cont {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
-    background-image: url(images/markthal-rotterdam-hero.jpg);
-    min-height: 330px;
-    background-position: center center;
+.heroimage {
+    background: url(./images/markthal-rotterdam-hero.jpg);
+    height: 50vh;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
-.box-txt {
-    background-color: white;
-    width: 33.33%;
 
+.square {
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+#backcol {
+    background-color: #f3f3f3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.foot {
+    background-color: #01689b;
+    height: 40vh;
+}
+
+#languages {
+    position: relative;
+    height: 20vh;
+    background-color: white;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    ...
+}
+
+@media (min-width: 992px) {
+    ...
+}
+
+@media (min-width: 1200px) {
+    form.form-inline.my-2.my-lg-0 {
+        margin-top: 50px;
+    }
 }
