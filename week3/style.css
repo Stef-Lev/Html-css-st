@@ -10,11 +10,31 @@ body {
 h3 {
     font-weight: bold;
     color: #00527a;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+}
+
+h3 a {
+    font-weight: bold;
+    color: #00527a;
+}
+
+h2 {
+    font-weight: bold;
+    color: black;
+}
+
+h4 {
+    font-weight: bold;
+    color: black;
+    font-size: 1.1rem;
 }
 
 hr {
     margin-top: 55px;
+}
+
+ul {
+    padding: 25px 25px 25px 25px;
 }
 
 header {
@@ -24,48 +44,48 @@ header {
 }
 
 .container #logotype {
-    margin-left: 45%;
-    margin-right: 55%;
+    margin-left: 42%;
+    margin-right: 38%;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     padding-left: 5vw;
     padding-right: 5vw;
 }
 
-.bg-light {
+.bg-dark {
     background-color: #01689b!important;
     min-height: 80px;
 }
 
-.navbar-light .navbar-brand {
+.navbar-dark .navbar-brand {
     color: white;
     font-size: 1.625rem;
 }
 
-.navbar-light .navbar-brand:hover {
+.navbar-dark .navbar-brand:hover {
     color: white;
     text-decoration: underline;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: white;
     font-size: 1.25rem;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
     color: white;
     text-decoration: underline;
 }
 
-.navbar-light .navbar-toggler {
+.navbar-dark .navbar-toggler {
     color: white;
     border-color: #01689b!important;
 }
 
 .heroimage {
     background: url(./images/markthal-rotterdam-hero.jpg);
-    height: 50vh;
+    height: 320px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,8 +94,21 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
 .square {
     background-color: white;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    margin-top: 25px;
+}
+
+li a.sqlinks:hover {
+    text-decoration: none;
+}
+
+#symbol:hover {
+    text-decoration: underline;
+}
+
+div.heroimage ul li {
+    list-style: none;
 }
 
 #backcol {
@@ -86,27 +119,99 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
 .foot {
     background-color: #01689b;
-    height: 40vh;
+    height: 100%;
 }
 
 #languages {
     position: relative;
-    height: 20vh;
+    height: 30vh;
     background-color: white;
+}
+
+div.container.d-flex.justify-content-center {
+    padding-top: 60px;
+}
+
+button.btn.btn-outline-primary.mx-2:hover {
+    color: white;
+}
+
+button.btn.btn-outline-primary.mx-2.border-0 {
+    color: black;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+section.foot {
+    height: 290px;
+}
+
+.foot .container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.foot div ul {
+    margin: 0;
+    padding: 0;
+}
+
+.foot div ul li {
+    color: white;
+    list-style: none;
+}
+
+.foot div h2 {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.foot div a {
+    color: white;
+}
+
+#questions {
+    margin-left: 30px;
+    margin-right: 0;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 0;
+    size: 50%;
+}
+
+#questions h3 {
+    font-size: 2.3rem;
+}
+
+#questions div .card-body {
+    width: 300px;
+    font-size: 1.6rem;
+    text-align: center;
 }
 
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
-    ...
+    #questions {
+        margin-left: 102.5px;
+    }
 }
 
 @media (min-width: 992px) {
-    ...
+    #questions {
+        margin-left: 102.5px;
+    }
 }
 
+
+}
 @media (min-width: 1200px) {
     form.form-inline.my-2.my-lg-0 {
         margin-top: 50px;
+    }
+    
+    #questions {
+        margin-left: 102.5px;
     }
 }
