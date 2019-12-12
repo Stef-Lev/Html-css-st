@@ -43,11 +43,6 @@ header {
     display: block;
 }
 
-.container #logotype {
-    margin-left: 42%;
-    margin-right: 38%;
-}
-
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -95,8 +90,10 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 .square {
     background-color: white;
     position: absolute;
+    left: 6.5vw;
     z-index: 1;
     margin-top: 25px;
+    width: 45vw;
 }
 
 li a.sqlinks:hover {
@@ -171,17 +168,17 @@ section.foot {
 }
 
 #questions {
-    margin-left: 30px;
-    margin-right: 0;
     margin-top: 40px;
     margin-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 0;
     size: 50%;
 }
 
 #questions h3 {
     font-size: 2.3rem;
+}
+
+#questions .card {
+    border: 3px solid #0d79af;
 }
 
 #questions div .card-body {
@@ -190,28 +187,79 @@ section.foot {
     text-align: center;
 }
 
-@media (min-width: 576px) {}
+@media (max-width: 576px) {
+    .square {
+        width: 85vw;
+    }
+    #logotype {
+        display: none;
+    }
+    img#logotypesmall {
+        margin-left: 42vw;
+    }
+    button.btn.btn-dark {
+        float: left;
+    }
+}
+
+@media (min-width: 576px) {
+    .square {
+        width: 85vw;
+    }
+    #logotypesmall {
+        display: none;
+    }
+    img#logotype {
+        margin-left: 35vw;
+    }
+    input.form-control {
+        width: 70vw;
+    }
+    button.btn.btn-dark {
+        float: left;
+    }
+}
 
 @media (min-width: 768px) {
-    #questions {
-        margin-left: 102.5px;
+    #thatbox {
+        position: absolute;
+        right: 8.5vw;
+        top: 135px;
+    }
+    .square {
+        width: 50vw;
+    }
+    img#logotype {
+        margin-left: 35vw;
+    }
+}
+
+@media (max-width: 768px) {
+    input.form-control {
+        width: 70vw;
+    }
+    button.btn.btn-dark {
+        float: left;
     }
 }
 
 @media (min-width: 992px) {
-    #questions {
-        margin-left: 102.5px;
+    .square {
+        width: 35vw;
+    }
+    img#logotype {
+        margin-left: 35vw;
     }
 }
 
 
 }
 @media (min-width: 1200px) {
-    form.form-inline.my-2.my-lg-0 {
-        margin-top: 50px;
+    .square {
+        width: 35vw;
     }
     
-    #questions {
-        margin-left: 102.5px;
+    img#logotype {
+        margin-left: 35vw;
     }
 }
