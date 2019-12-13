@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap');
+
+/* Basic Body CSS - Start */
+
 body {
     font-family: 'Alegreya Sans', sans-serif;
     margin: 0;
@@ -37,20 +40,14 @@ ul {
     padding: 25px 25px 25px 25px;
 }
 
-header {
-    background-color: #fff;
-    position: relative;
-    display: block;
-}
 
-nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
+/* Basic Body CSS - End */
+
+
+/* Navbar - Start */
 
 .bg-dark {
     background-color: #01689b!important;
-    min-height: 80px;
 }
 
 .navbar-dark .navbar-brand {
@@ -78,22 +75,30 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
     border-color: #01689b!important;
 }
 
+
+/* Navbar - End */
+
+
+/* Hero Image Navigation - Start */
+
 .heroimage {
     background: url(./images/markthal-rotterdam-hero.jpg);
-    height: 320px;
+    height: 380px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+}
+
+.heroimage h3 {
+    font-size: 1.2em;
 }
 
 .square {
     background-color: white;
-    position: absolute;
-    left: 6.5vw;
-    z-index: 1;
-    margin-top: 25px;
-    width: 45vw;
+}
+
+div.container-fluid.sqcont {
+    padding-top: 15px;
 }
 
 li a.sqlinks:hover {
@@ -108,21 +113,36 @@ div.heroimage ul li {
     list-style: none;
 }
 
+
+/* Hero Image Navigation - End */
+
+
+/* Main Section - Start*/
+
 #backcol {
     background-color: #f3f3f3;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
+
+/* Main Section - End*/
+
+
+/* Footer and languages - Start */
+
 .foot {
     background-color: #01689b;
-    height: 100%;
 }
 
 #languages {
     position: relative;
     height: 30vh;
     background-color: white;
+}
+
+div .languages {
+    height: 50vh;
 }
 
 div.container.d-flex.justify-content-center {
@@ -133,7 +153,7 @@ button.btn.btn-outline-primary.mx-2:hover {
     color: white;
 }
 
-button.btn.btn-outline-primary.mx-2.border-0 {
+button.btn.btn-outline-primary.mx-1.p-1.border-0 {
     color: black;
     font-weight: bold;
     pointer-events: none;
@@ -167,7 +187,12 @@ section.foot {
     color: white;
 }
 
-#questions {
+div.container-fluid.d-flex.justify-content-center.align-items-center.languages {
+    height: 150px;
+}
+
+
+/* #questions {
     margin-top: 40px;
     margin-bottom: 60px;
     size: 50%;
@@ -185,9 +210,16 @@ section.foot {
     width: 300px;
     font-size: 1.6rem;
     text-align: center;
-}
+} */
 
-@media (max-width: 576px) {
+
+/* Footer and languages - End */
+
+
+/* Media Queries - Start */
+
+
+/* @media (max-width: 576px) {
     .square {
         width: 85vw;
     }
@@ -219,6 +251,8 @@ section.foot {
         float: left;
     }
 }
+
+
 
 @media (min-width: 768px) {
     #thatbox {
@@ -262,4 +296,7 @@ section.foot {
     img#logotype {
         margin-left: 35vw;
     }
-}
+} */
+
+
+/* Media Queries - End */
