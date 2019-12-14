@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap');
 
+/* TO DO!!! */
+
+
+/* >Media query for logo
+   >Navbar elements to right
+   >Search box cover
+   > */
+
+
 /* Basic Body CSS - Start */
 
 body {
@@ -42,6 +51,13 @@ ul {
 
 
 /* Basic Body CSS - End */
+
+
+/* Logo section */
+
+.logocontainer {
+    text-align: center;
+}
 
 
 /* Navbar - Start */
@@ -135,16 +151,6 @@ div.heroimage ul li {
     background-color: #01689b;
 }
 
-#languages {
-    position: relative;
-    height: 30vh;
-    background-color: white;
-}
-
-div .languages {
-    height: 50vh;
-}
-
 div.container.d-flex.justify-content-center {
     padding-top: 60px;
 }
@@ -159,8 +165,8 @@ button.btn.btn-outline-primary.mx-1.p-1.border-0 {
     pointer-events: none;
 }
 
-section.foot {
-    height: 290px;
+div.foot {
+    height: 280px;
 }
 
 .foot .container {
@@ -192,111 +198,61 @@ div.container-fluid.d-flex.justify-content-center.align-items-center.languages {
 }
 
 
-/* #questions {
-    margin-top: 40px;
-    margin-bottom: 60px;
-    size: 50%;
-}
-
-#questions h3 {
-    font-size: 2.3rem;
-}
-
-#questions .card {
-    border: 3px solid #0d79af;
-}
-
-#questions div .card-body {
-    width: 300px;
-    font-size: 1.6rem;
-    text-align: center;
-} */
-
-
 /* Footer and languages - End */
 
 
 /* Media Queries - Start */
 
-
-/* @media (max-width: 576px) {
-    .square {
-        width: 85vw;
-    }
+@media (max-width: 576px) {
     #logotype {
         display: none;
-    }
-    img#logotypesmall {
-        margin-left: 42vw;
-    }
-    button.btn.btn-dark {
-        float: left;
     }
 }
 
 @media (min-width: 576px) {
-    .square {
-        width: 85vw;
-    }
     #logotypesmall {
         display: none;
     }
-    img#logotype {
-        margin-left: 35vw;
+    .qbox {
+        font-size: 1.5em;
     }
-    input.form-control {
-        width: 70vw;
-    }
-    button.btn.btn-dark {
-        float: left;
+    .qbox a {
+        font-size: 1.5em;
     }
 }
-
-
 
 @media (min-width: 768px) {
-    #thatbox {
+    .thatbox {
         position: absolute;
-        right: 8.5vw;
-        top: 135px;
+        top: 125px;
+        right: 15px;
+        width: 35vw;
     }
-    .square {
-        width: 50vw;
+    .qbox {
+        font-size: 2em;
     }
-    img#logotype {
-        margin-left: 35vw;
-    }
-}
-
-@media (max-width: 768px) {
-    input.form-control {
-        width: 70vw;
-    }
-    button.btn.btn-dark {
-        float: left;
+    .qbox a {
+        font-size: 2em;
     }
 }
 
 @media (min-width: 992px) {
-    .square {
-        width: 35vw;
+    .qbox {
+        font-size: 2.5em;
     }
-    img#logotype {
-        margin-left: 35vw;
+    .qbox a {
+        font-size: 2.5em;
     }
 }
 
-
-}
 @media (min-width: 1200px) {
-    .square {
-        width: 35vw;
+    .qbox {
+        font-size: 3em;
     }
-    
-    img#logotype {
-        margin-left: 35vw;
+    .qbox a {
+        font-size: 3em;
     }
-} */
+}
 
 
 /* Media Queries - End */
