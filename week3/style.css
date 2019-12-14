@@ -91,11 +91,6 @@ ul {
     border-color: #01689b!important;
 }
 
-ul.navbar-nav {
-    position: absolute;
-    right: 0px;
-}
-
 
 /* Navbar - End */
 
@@ -231,13 +226,17 @@ div.container-fluid.d-flex.justify-content-center.align-items-center.languages {
         position: absolute;
         top: 80px;
         right: 15px;
-        width: 35vw;
+        width: 30vw;
     }
     .qbox {
         font-size: 2em;
     }
     .qbox a {
         font-size: 2em;
+    }
+    ul.navbar-nav {
+        position: absolute;
+        right: 0px;
     }
 }
 
