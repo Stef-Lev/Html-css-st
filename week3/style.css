@@ -46,7 +46,7 @@ hr {
 }
 
 ul {
-    padding: 25px 25px 25px 25px;
+    padding: 15px 15px 15px 15px;
 }
 
 
@@ -89,6 +89,11 @@ ul {
 .navbar-dark .navbar-toggler {
     color: white;
     border-color: #01689b!important;
+}
+
+ul.navbar-nav {
+    position: absolute;
+    right: 0px;
 }
 
 
@@ -224,7 +229,7 @@ div.container-fluid.d-flex.justify-content-center.align-items-center.languages {
 @media (min-width: 768px) {
     .thatbox {
         position: absolute;
-        top: 125px;
+        top: 80px;
         right: 15px;
         width: 35vw;
     }
