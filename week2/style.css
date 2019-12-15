@@ -82,5 +82,8 @@ ul li:first-of-type {
         flex-basis:96%;
         font-size: 0.5rem
     }
+    .arabic {
+        font-size: 0.6rem
+    }
 
 }
