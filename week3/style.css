@@ -83,7 +83,20 @@ ul {
     color: white;
     border-color: #01689b!important;
 }
-
+/* X Button experiment - start */
+.navbar-toggler>.closedx {
+    display:inline;
+}
+.navbar-toggler.collapsed>.closedx, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+span i {
+    color: rgb(190, 190, 190);
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+}
+/* X Button experiment - end */
 
 /* Navbar - End */
 
